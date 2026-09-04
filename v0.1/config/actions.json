@@ -1,0 +1,47 @@
+{
+  "actions": [
+    {
+      "id": "a_scavenge_gate_ergou",
+      "name": "二狗家",
+      "location": "loc_gate",
+      "unlock": { "scavenge": 1 },
+      "duration": 2.0,
+      "xp": { "scavenge": 5 },
+      "description": "在二狗家院墙外翻找。",
+      "icon": "res://assets/temp/ActionImage/scavenge_gate_ergou.png",
+      "entries": [
+        { "item": "i_rag", "chance": 1.0, "min": 1, "max": 2 },
+        { "item": "i_worn_coin", "chance": 0.4, "min": 1, "max": 1 }
+      ]
+    },
+    {
+      "id": "a_scavenge_gate_woodshed",
+      "name": "柴房",
+      "location": "loc_gate",
+      "unlock": { "scavenge": 2 },
+      "duration": 3.0,
+      "xp": { "scavenge": 8 },
+      "description": "柴房边捡拾木屑与杂物。",
+      "icon": "res://assets/temp/ActionImage/scavenge_gate_woodshed.png",
+      "entries": [
+        { "item": "i_wood_scrap", "chance": 1.0, "min": 1, "max": 1 },
+        { "item": "i_rag", "chance": 0.5, "min": 1, "max": 2 },
+        { "item": "i_gold", "chance": 0.3, "min": 1, "max": 3 }
+      ]
+    },
+    {
+      "id": "a_scavenge_pine_trail",
+      "name": "林间小道",
+      "location": "loc_pine",
+      "unlock": { "scavenge": 10 },
+      "duration": 4.0,
+      "xp": { "scavenge": 15 },
+      "description": "沿林间小道搜寻麻绳与兽牙。",
+      "icon": "res://assets/temp/ActionImage/scavenge_black_pine_trail.png",
+      "entries": [
+        { "item": "i_hemp_rope", "chance": 1.0, "min": 1, "max": 1 },
+        { "item": "i_beast_fang", "chance": 0.3, "min": 1, "max": 2 }
+      ]
+    }
+  ]
+}

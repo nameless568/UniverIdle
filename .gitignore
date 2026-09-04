@@ -1,0 +1,14 @@
+# Godot 缓存/生成物
+.godot/
+*.import
+*.translation
+
+# 不纳入仓库
+设计/
+参考项目/
+Godot_v4.5-stable_mono_win64/
+v0.1/ui/
+
+# 系统
+Thumbs.db
+.DS_Store

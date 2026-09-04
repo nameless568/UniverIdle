@@ -1,0 +1,12 @@
+{
+  "items": [
+    { "id": "i_rag", "name": "破布", "icon": "res://assets/temp/ItemIcon/item_rag.png", "description": "拾荒捡到的破布。" },
+    { "id": "i_empty_bottle", "name": "空瓶", "icon": "res://assets/temp/ItemIcon/item_empty_bottle.png", "description": "还能用的空瓶子。" },
+    { "id": "i_hemp_rope", "name": "麻绳", "icon": "res://assets/temp/ItemIcon/item_hemp_rope.png", "description": "结实的麻绳。" },
+    { "id": "i_worn_coin", "name": "旧硬币", "icon": "res://assets/temp/ItemIcon/item_worn_coin.png", "description": "磨得发亮的旧硬币。" },
+    { "id": "i_worn_hat", "name": "旧帽子", "icon": "res://assets/temp/ItemIcon/item_worn_hat.png", "description": "不知谁落下的旧帽子。" },
+    { "id": "i_wood_scrap", "name": "木屑", "icon": "res://assets/temp/ItemIcon/item_wood_scrap.png", "description": "柴房旁的碎木屑。" },
+    { "id": "i_beast_fang", "name": "兽牙", "icon": "res://assets/temp/ItemIcon/item_beast_fang.png", "description": "猛兽脱落的牙齿。" },
+    { "id": "i_gold", "name": "金币", "icon": "res://assets/temp/ItemIcon/item_gold.png", "description": "系统金币，不占背包格。" }
+  ]
+}

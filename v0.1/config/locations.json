@@ -1,0 +1,6 @@
+{
+  "locations": [
+    { "id": "loc_gate", "name": "村口" },
+    { "id": "loc_pine", "name": "黑松林" }
+  ]
+}
