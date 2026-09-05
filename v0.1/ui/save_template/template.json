@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "character": {
+    "id": "p_default",
+    "name": "旅行者",
+    "current_action": "",
+    "progress": 0.0,
+    "skill_xp": {},
+    "unlocked_actions": [],
+    "inventory": { "capacity": 10, "items": { "i_gold": 0 } }
+  },
+  "locations": [
+    { "id": "loc_gate", "name": "村口", "unlocked": false },
+    { "id": "loc_pine", "name": "黑松林", "unlocked": false },
+    { "id": "loc_gate_ergou", "name": "二狗家", "unlocked": false },
+    { "id": "loc_gate_woodshed", "name": "柴房", "unlocked": false },
+    { "id": "loc_pine_trail", "name": "林间小道", "unlocked": false }
+  ],
+  "last_update_utc": 0.0
+}
