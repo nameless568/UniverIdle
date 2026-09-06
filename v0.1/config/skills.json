@@ -1,0 +1,12 @@
+{
+  "skills": [
+    { "id": "scavenge", "name": "拾荒", "color": "#72a898" },
+    { "id": "woodcutting", "name": "砍伐", "color": "#8a9a5b" },
+    { "id": "mining", "name": "挖矿", "color": "#7d7d8c" },
+    { "id": "monster_explore", "name": "魔物探索", "color": "#a85b5b" },
+    { "id": "hunting", "name": "打猎", "color": "#c87048" },
+    { "id": "fishing", "name": "溪钓", "color": "#5b8aa8" },
+    { "id": "alchemy", "name": "炼药", "color": "#9a6bb0" },
+    { "id": "combat", "name": "讨伐", "color": "#b0483a" }
+  ]
+}

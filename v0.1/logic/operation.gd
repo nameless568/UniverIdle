@@ -5,6 +5,7 @@ const TYPE_START_ACTION := "start_action"
 const TYPE_STOP_ACTION := "stop_action"
 const TYPE_SET_NAME := "set_name"
 const TYPE_BUY_SLOTS := "buy_slots"
+const TYPE_DEBUG_STEP := "debug_step"
 
 var type: String = ""
 var param: String = ""

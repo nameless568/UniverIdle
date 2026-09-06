@@ -1,6 +1,18 @@
 {
   "locations": [
-    { "id": "loc_gate", "name": "村口" },
-    { "id": "loc_pine", "name": "黑松林" }
+    { "id": "loc_gate", "name": "村口", "parent": "", "banner": "res://assets/temp/BannerImage/banner_gate.png" },
+    { "id": "loc_pine", "name": "黑松林", "parent": "", "banner": "res://assets/temp/BannerImage/banner_black_pine.png" },
+    { "id": "loc_outskirts", "name": "村外林地", "parent": "" , "banner": "res://assets/temp/BannerImage/banner_black_pine.png" },
+    { "id": "loc_spruce_forest", "name": "黑松林外围", "parent": "", "banner": "res://assets/temp/BannerImage/banner_black_pine.png"  },
+    { "id": "loc_wilderness", "name": "荒野林地", "parent": "" , "banner": "res://assets/temp/BannerImage/banner_black_pine.png" },
+    { "id": "loc_border", "name": "边境密林", "parent": "" , "banner": "res://assets/temp/BannerImage/banner_black_pine.png" },
+    { "id": "loc_royal_forest", "name": "王国森林", "parent": "", "banner": "res://assets/temp/BannerImage/banner_black_pine.png"  },
+    { "id": "loc_war_zone", "name": "战争林区", "parent": "" , "banner": "res://assets/temp/BannerImage/banner_black_pine.png" },
+    { "id": "loc_demon_woods", "name": "魔族旧林", "parent": "" , "banner": "res://assets/temp/BannerImage/banner_black_pine.png" },
+    { "id": "loc_ancient_forest", "name": "古代森林", "parent": "" , "banner": "res://assets/temp/BannerImage/banner_black_pine.png" },
+    { "id": "loc_world_end", "name": "世界尽头", "parent": "" , "banner": "res://assets/temp/BannerImage/banner_black_pine.png" },
+    { "id": "loc_gate_ergou", "name": "二狗家", "parent": "loc_gate" },
+    { "id": "loc_gate_woodshed", "name": "柴房", "parent": "loc_gate" },
+    { "id": "loc_pine_trail", "name": "林间小道", "parent": "loc_pine" }
   ]
 }

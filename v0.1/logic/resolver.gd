@@ -42,6 +42,16 @@ static func compute_unlocks(state, character: CharacterData) -> void:
 				loc.unlocked = true
 				break
 
+	# 父地点：任一子地点解锁，即父地点解锁（只支持一层，单调只加不减）
+	for loc_id in state.environment.locations:
+		var loc: LocationData = state.environment.locations[loc_id]
+		if loc.parent_id == "" or not loc.unlocked:
+			continue
+		if state.environment.locations.has(loc.parent_id):
+			var parent: LocationData = state.environment.locations[loc.parent_id]
+			if not parent.unlocked:
+				parent.unlocked = true
+
 # 结算 count 次：消耗先查后扣，获取独立掷骰，经验累计；中途缺料则停止。
 static func settle(state, character: CharacterData, action: ActionDef, count: int) -> Dictionary:
 	var gained := {}

@@ -14,7 +14,16 @@
     { "id": "loc_pine", "name": "黑松林", "unlocked": false },
     { "id": "loc_gate_ergou", "name": "二狗家", "unlocked": false },
     { "id": "loc_gate_woodshed", "name": "柴房", "unlocked": false },
-    { "id": "loc_pine_trail", "name": "林间小道", "unlocked": false }
+    { "id": "loc_pine_trail", "name": "林间小道", "unlocked": false },
+    { "id": "loc_outskirts", "name": "村外林地", "unlocked": false },
+    { "id": "loc_spruce_forest", "name": "云杉林", "unlocked": false },
+    { "id": "loc_wilderness", "name": "荒野林地", "unlocked": false },
+    { "id": "loc_border", "name": "边境密林", "unlocked": false },
+    { "id": "loc_royal_forest", "name": "王国森林", "unlocked": false },
+    { "id": "loc_war_zone", "name": "战争林区", "unlocked": false },
+    { "id": "loc_demon_woods", "name": "魔族旧林", "unlocked": false },
+    { "id": "loc_ancient_forest", "name": "古代森林", "unlocked": false },
+    { "id": "loc_world_end", "name": "世界尽头", "unlocked": false }
   ],
   "last_update_utc": 0.0
 }

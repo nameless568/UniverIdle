@@ -2,8 +2,8 @@
   "actions": [
     {
       "id": "a_scavenge_gate_ergou",
-      "name": "二狗家",
-      "location": "loc_gate",
+      "name": "二狗家拾荒",
+      "location": "loc_gate_ergou",
       "unlock": { "scavenge": 1 },
       "duration": 2.0,
       "xp": { "scavenge": 5 },
@@ -11,36 +11,208 @@
       "icon": "res://assets/temp/ActionImage/scavenge_gate_ergou.png",
       "entries": [
         { "item": "i_rag", "chance": 1.0, "min": 1, "max": 2 },
-        { "item": "i_worn_coin", "chance": 0.4, "min": 1, "max": 1 }
+        { "item": "i_ergou_marble", "chance": 0.25, "min": 1, "max": 1 },
+        { "item": "i_worn_coin", "chance": 0.4, "min": 1, "max": 1 },
+        { "item": "i_gold", "chance": 0.3, "min": 1, "max": 3 }
       ]
     },
     {
       "id": "a_scavenge_gate_woodshed",
-      "name": "柴房",
-      "location": "loc_gate",
+      "name": "柴房拾荒",
+      "location": "loc_gate_woodshed",
       "unlock": { "scavenge": 2 },
       "duration": 3.0,
       "xp": { "scavenge": 8 },
       "description": "柴房边捡拾木屑与杂物。",
       "icon": "res://assets/temp/ActionImage/scavenge_gate_woodshed.png",
       "entries": [
-        { "item": "i_wood_scrap", "chance": 1.0, "min": 1, "max": 1 },
-        { "item": "i_rag", "chance": 0.5, "min": 1, "max": 2 },
-        { "item": "i_gold", "chance": 0.3, "min": 1, "max": 3 }
+        { "item": "i_wood_scrap", "chance": 1.0, "min": 1, "max": 2 },
+        { "item": "i_dry_branch", "chance": 0.8, "min": 1, "max": 2 },
+        { "item": "i_copper_nail", "chance": 0.35, "min": 1, "max": 1 },
+        { "item": "i_slag", "chance": 0.3, "min": 1, "max": 1 }
       ]
     },
     {
       "id": "a_scavenge_pine_trail",
-      "name": "林间小道",
-      "location": "loc_pine",
-      "unlock": { "scavenge": 10 },
+      "name": "林间小道拾荒",
+      "location": "loc_pine_trail",
+      "unlock": { "scavenge": 4 },
       "duration": 4.0,
-      "xp": { "scavenge": 15 },
-      "description": "沿林间小道搜寻麻绳与兽牙。",
+      "xp": { "scavenge": 12 },
+      "description": "沿黑松林的小道边走边捡。",
       "icon": "res://assets/temp/ActionImage/scavenge_black_pine_trail.png",
       "entries": [
-        { "item": "i_hemp_rope", "chance": 1.0, "min": 1, "max": 1 },
-        { "item": "i_beast_fang", "chance": 0.3, "min": 1, "max": 2 }
+        { "item": "i_empty_bottle", "chance": 0.9, "min": 1, "max": 1 },
+        { "item": "i_hemp_rope", "chance": 0.6, "min": 1, "max": 1 },
+        { "item": "i_herb_sprout", "chance": 0.5, "min": 1, "max": 2 },
+        { "item": "i_old_charm", "chance": 0.08, "min": 1, "max": 1 }
+      ]
+    },
+    {
+      "id": "a_wood_outskirts_pine",
+      "name": "砍伐松木",
+      "location": "loc_outskirts",
+      "unlock": { "woodcutting": 1 },
+      "duration": 3.0,
+      "xp": { "woodcutting": 8 },
+      "description": "砍伐村外林地的短松。",
+      "icon": "res://assets/temp/BannerImage/banner_black_pine.png",
+      "entries": [
+        { "item": "i_pine_log", "chance": 1.0, "min": 1, "max": 2 }
+      ]
+    },
+    {
+      "id": "a_wood_outskirts_birch",
+      "name": "砍伐桦木",
+      "location": "loc_outskirts",
+      "unlock": { "woodcutting": 5 },
+      "duration": 4.0,
+      "xp": { "woodcutting": 12 },
+      "description": "剥下白桦的浅色木段。",
+      "icon": "res://assets/temp/BannerImage/banner_black_pine.png",
+      "entries": [
+        { "item": "i_birch_log", "chance": 1.0, "min": 1, "max": 2 }
+      ]
+    },
+    {
+      "id": "a_wood_spruce_forest_oak",
+      "name": "砍伐橡木",
+      "location": "loc_spruce_forest",
+      "unlock": { "woodcutting": 10 },
+      "duration": 5.0,
+      "xp": { "woodcutting": 16 },
+      "description": "采伐黑松林外围的橡树硬木。",
+      "icon": "res://assets/temp/BannerImage/banner_black_pine.png",
+      "entries": [
+        { "item": "i_oak_log", "chance": 1.0, "min": 1, "max": 2 }
+      ]
+    },
+    {
+      "id": "a_wood_spruce_forest_walnut",
+      "name": "砍伐胡桃木",
+      "location": "loc_spruce_forest",
+      "unlock": { "woodcutting": 15 },
+      "duration": 6.0,
+      "xp": { "woodcutting": 20 },
+      "description": "寻伐黑松林外围的胡桃树。",
+      "icon": "res://assets/temp/BannerImage/banner_black_pine.png",
+      "entries": [
+        { "item": "i_walnut_log", "chance": 1.0, "min": 1, "max": 2 }
+      ]
+    },
+    {
+      "id": "a_wood_wilderness_ironwood",
+      "name": "砍伐铁木",
+      "location": "loc_wilderness",
+      "unlock": { "woodcutting": 25 },
+      "duration": 8.0,
+      "xp": { "woodcutting": 28 },
+      "description": "深涉荒野林地，砍伐密实如铁的铁木。",
+      "icon": "res://assets/temp/BannerImage/banner_black_pine.png",
+      "entries": [
+        { "item": "i_ironwood_log", "chance": 1.0, "min": 1, "max": 1 }
+      ]
+    },
+    {
+      "id": "a_mining_outskirts_copper",
+      "name": "开采铜矿",
+      "location": "loc_outskirts",
+      "unlock": { "mining": 1 },
+      "duration": 4.0,
+      "xp": { "mining": 10 },
+      "description": "在村外矿洞口剥采红土铜矿。",
+      "icon": "res://assets/temp/BannerImage/banner_old_road.png",
+      "entries": [
+        { "item": "i_copper_ore", "chance": 1.0, "min": 1, "max": 2 },
+        { "item": "i_slag", "chance": 0.3, "min": 1, "max": 1 }
+      ]
+    },
+    {
+      "id": "a_mining_wilderness_tin",
+      "name": "开采锡矿",
+      "location": "loc_wilderness",
+      "unlock": { "mining": 10 },
+      "duration": 5.0,
+      "xp": { "mining": 15 },
+      "description": "掘开荒野的锡矿脉。",
+      "icon": "res://assets/temp/BannerImage/banner_old_road.png",
+      "entries": [
+        { "item": "i_tin_ore", "chance": 1.0, "min": 1, "max": 2 }
+      ]
+    },
+    {
+      "id": "a_mining_border_iron",
+      "name": "开采铁矿",
+      "location": "loc_border",
+      "unlock": { "mining": 20 },
+      "duration": 6.0,
+      "xp": { "mining": 22 },
+      "description": "深入边境密林的铁矿层。",
+      "icon": "res://assets/temp/BannerImage/banner_old_road.png",
+      "entries": [
+        { "item": "i_iron_ore", "chance": 1.0, "min": 1, "max": 2 }
+      ]
+    },
+    {
+      "id": "a_mining_world_meteor",
+      "name": "开采陨铁矿",
+      "location": "loc_world_end",
+      "unlock": { "mining": 40 },
+      "duration": 10.0,
+      "xp": { "mining": 40 },
+      "description": "在世界尽头的坠星矿洞尽头碰运气。",
+      "icon": "res://assets/temp/BannerImage/banner_old_road.png",
+      "entries": [
+        { "item": "i_meteor_ore", "chance": 1.0, "min": 1, "max": 1 },
+        { "item": "i_stardust_shard", "chance": 0.1, "min": 1, "max": 1 }
+      ]
+    },
+    {
+      "id": "a_explore_outskirts_small",
+      "name": "林缘设小陷阱",
+      "location": "loc_outskirts",
+      "unlock": { "monster_explore": 1 },
+      "duration": 6.0,
+      "xp": { "monster_explore": 15 },
+      "description": "在村外林地边缘布置绳套，等待小型魔物上钩。",
+      "icon": "res://assets/temp/BannerImage/banner_black_pine.png",
+      "entries": [
+        { "item": "i_small_trap", "chance": 1.0, "min": -1, "max": -1 },
+        { "item": "i_beast_fang", "chance": 0.7, "min": 1, "max": 1 },
+        { "item": "i_tattered_pelt", "chance": 0.7, "min": 1, "max": 1 },
+        { "item": "i_slime_gel", "chance": 0.4, "min": 1, "max": 1 }
+      ]
+    },
+    {
+      "id": "a_explore_wilderness_small",
+      "name": "溪谷设小陷阱",
+      "location": "loc_wilderness",
+      "unlock": { "monster_explore": 8 },
+      "duration": 8.0,
+      "xp": { "monster_explore": 22 },
+      "description": "在荒野溪谷下套，猎物更杂也更怪。",
+      "icon": "res://assets/temp/BannerImage/banner_black_pine.png",
+      "entries": [
+        { "item": "i_small_trap", "chance": 1.0, "min": -1, "max": -1 },
+        { "item": "i_slime_gel", "chance": 0.8, "min": 1, "max": 2 },
+        { "item": "i_monster_pa", "chance": 0.25, "min": 1, "max": 1 },
+        { "item": "i_beast_fang", "chance": 0.5, "min": 1, "max": 1 }
+      ]
+    },
+    {
+      "id": "a_explore_border_large",
+      "name": "险地设大陷阱",
+      "location": "loc_border",
+      "unlock": { "monster_explore": 20 },
+      "duration": 12.0,
+      "xp": { "monster_explore": 35 },
+      "description": "在边境险地架设铁夹，困住更强壮的魔物。",
+      "icon": "res://assets/temp/BannerImage/banner_black_pine.png",
+      "entries": [
+        { "item": "i_large_trap", "chance": 1.0, "min": -1, "max": -1 },
+        { "item": "i_cracked_core", "chance": 0.6, "min": 1, "max": 1 },
+        { "item": "i_beast_fang", "chance": 0.8, "min": 1, "max": 2 },
+        { "item": "i_tattered_pelt", "chance": 0.6, "min": 1, "max": 1 }
       ]
     }
   ]
